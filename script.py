@@ -1,9 +1,10 @@
 import turtle
 
 bruno = turtle.Turtle()
-
-for i in range(4):
-    bruno.fd(100)
-    bruno.lt(90)
-print(bruno)
+def poligono(t,n,linha):
+    angulo = 360 / n
+    for i in range(n):
+        t.fd(linha)
+        t.lt(angulo)
+poligono(bruno,7,70)
 turtle.mainloop()
